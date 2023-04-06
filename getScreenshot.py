@@ -35,7 +35,7 @@ def save_screenshot():
         cv2.imshow("capture", frame)
         folder_path = makedir()
         file_name = f'{folder_path}+{time.time()}.png'
-        if cv2.waitKey(1) :   #如果按下q 就截圖儲存並退出
+        if cv2.waitKey(1) :   #一秒儲存一張
             cv2.imwrite(f'{file_name}', frame)   #儲存路徑
         break
 
